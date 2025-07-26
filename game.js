@@ -94,15 +94,23 @@ function checkResult(){
 
 
 function resetGame() {
+  playerLocked=false;
   gameState = ["", "", "", "", "", "", "", "", ""];
   isGameActive = true;
   status.textContent ="";
-   playerLocked=false;
+  currentPlayer="";
+   
  
 
   cells.forEach(cell => {
     cell.textContent = "";
     cell.classList.remove("win");
+  });
+
+  document.querySelectorAll(".player").forEach(btn => {
+    btn.disabled = false;
+    btn.style.opacity = "1";
+    btn.style.cursor = "pointer";
   });
 
  
