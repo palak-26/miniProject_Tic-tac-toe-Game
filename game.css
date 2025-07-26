@@ -1,0 +1,70 @@
+*{
+   margin: 0;
+   padding: 0; 
+}
+#main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: white ;
+    background-color: cornflowerblue;
+    fill-opacity: 70;
+    font-family: sans-serif;
+    gap: 20px;
+}
+#heading{
+    text-align: center;
+    color: black;
+}
+
+#container{
+    height: auto;
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cells{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    color: black;
+    background-color:azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+
+}
+.cells:hover{
+    background-color: beige;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+#reset{
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+}
+
+#status{
+    color: aquamarine;
+}
+
+.player{
+    height: 20px;
+    width: 50px;
+}
+
+.win{
+    background-color: darkcyan;
+}
+.win:hover{
+    background-color: darkcyan;
+}
